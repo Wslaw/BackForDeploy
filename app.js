@@ -27,8 +27,8 @@ app.use((err, req, res, next) => {
 const DB_HOST = "mongodb+srv://UserContacts:UserContacts@cluster0.bqahw9l.mongodb.net/my-contacts?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(DB_HOST)
   .then(() => {
-    app.listen(3003, () => {
-      console.log("Server is running. Use our API on port: 3003");
+    app.listen(3005, () => {
+      console.log("Server is running. Use our API on port: 3005");
     });
   })
   .catch(error => {
